@@ -1,0 +1,164 @@
+.overlay.animated {
+  opacity: 0;
+  visibility: hidden;
+
+
+  &.modal{
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -30%);
+    transition-delay: 0.2s;
+    
+  }
+
+  &.show{
+    opacity: 1;
+    visibility: visible;
+
+    &.modal{
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+  
+.open {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Refresh{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+  
+.overlay.show {
+  display: flex;
+}
+  
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+  
+.progress {
+  width: 100%;
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+  
+.progress div {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #007bff;
+}
+  
+h1 {
+  text-align: center;
+}
+  
+h2 {
+  margin-bottom: 20px;
+}
+  
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+  
+li {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #8166f9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+li:hover {
+  background-color: #f1f1f1;
+}
+  
+li:hover {
+  background-color: #f1f1f1;
+}
+
+.feather{
+  width: 40px;
+  height: 40px;
+}
+
+.head-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom:30px;
+  background-color: #b65252;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(6, 6, 6, 0.1);
+}
+
+.head-container h1 {
+  color: #1a1a1a; /* Темный цвет текста для заголовка */
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.head-container p {
+  color: #333; /* Нейтральный цвет текста для параграфов */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#root{
+  background-image: url("image.jpg");
+  background-repeat: repeat-y;  
+  background-size: auto;
+}
+
+body{
+  margin:0;
+}
+
+span{
+  margin:10px;
+  background-color: #dec2c2;
+  padding:5px;
+}
+
+.active{
+  font-weight: bold;
+}
+
+
+
